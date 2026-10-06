@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: uptrace
-  version: "1.41.0"
+  version: "1.45.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/uptrace-${{ version }}.tar.gz
-  sha256: 1bb985e0dc43675d40228c53ecb77380ffca117b6369c0544c622c5618e2ff04
+  sha256: 3e31c4b77a94c7664abbc5d9d144cc910c37468e4b1ff30fb7318b5340af97fc
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
